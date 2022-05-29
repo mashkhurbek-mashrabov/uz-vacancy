@@ -3,6 +3,8 @@
 import os
 import sys
 
+import environ
+
 
 def main():
     """Run administrative tasks."""
@@ -19,4 +21,5 @@ def main():
 
 
 if __name__ == '__main__':
+    environ.Env.read_env('.env')
     main()

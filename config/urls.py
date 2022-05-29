@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from bot.webhook_handler import webhook_handler
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('vacancy/admin/', admin.site.urls),
+    path('vacancy/bot/', webhook_handler),
 ]
